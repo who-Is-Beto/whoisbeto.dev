@@ -1,0 +1,49 @@
+.home__container {
+  color: var(--textColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 2rem;
+}
+
+.home__image {
+  width: 14rem;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.home__image:hover {
+  transform: scale(1.5);
+  border-radius: 0.8rem;
+}
+
+.greeting {
+  gap: 1rem;
+  color: var(--textColor);
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.greeting > * {
+  margin-bottom: 0.3rem;
+}
+
+@media (min-width: 768px) {
+  .home__container {
+    flex-direction: row;
+    gap: 5rem;
+    padding: 0 2rem;
+    align-items: center;
+  }
+
+  .home__image:hover {
+    transform: scale(1.1);
+  }
+}

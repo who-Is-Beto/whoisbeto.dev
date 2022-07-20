@@ -12,6 +12,7 @@
 }
 
 .navbar__item {
+  color: var(--textColor);
   text-decoration: none;
   width: 3rem;
   height: 3rem;
@@ -24,6 +25,11 @@
 }
 
 .navbar__item:active {
-  -webkit-tap-highlight-color: transparent;
   transform: translateY(-2rem) scale(2);
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
 }

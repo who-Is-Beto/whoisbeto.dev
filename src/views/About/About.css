@@ -1,0 +1,32 @@
+.main-about {
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin: 2rem 0;
+  color: var(--textColor);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 36, 5, 0.7245491946778712) 75%,
+      rgba(43, 203, 100, 0.12230829831932777) 100%
+    ),
+    url("https://i.imgur.com/F9HdDDV.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-about__text {
+  padding: 0.5rem;
+  color: var(--textColor);
+}
+
+.curriculums {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.more-about {
+  margin-top: 1rem;
+}

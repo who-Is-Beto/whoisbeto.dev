@@ -10,28 +10,28 @@ const Navbar: React.FC = (): JSX.Element => {
   return (
     <header className="header app__element">
       <nav className="navbar">
-        <div className="navbar__item">
-          <Link to="/">
+        <Link to="/">
+          <div className="navbar__item">
             <AiFillHome />
-          </Link>
-        </div>
-        <div className="navbar__item">
-          <Link to="/about">
+          </div>
+        </Link>
+        <Link to="/about">
+          <div className="navbar__item">
             <FaUser />
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div className="navbar__item">
-          <Link to="/experience">
+        <Link to="/experience">
+          <div className="navbar__item">
             <FaBriefcase />
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div className="navbar__item">
-          <Link to="/contact">
+        <Link to="/contact">
+          <div className="navbar__item">
             <SiGooglemessages />
-          </Link>
-        </div>
+          </div>
+        </Link>
       </nav>
     </header>
   );
