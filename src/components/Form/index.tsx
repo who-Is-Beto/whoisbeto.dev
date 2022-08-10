@@ -25,11 +25,9 @@ const Form: React.FC = (): JSX.Element => {
     if (Object.keys(formErrors).length === 0) {
       console.log("GREAT");
       const response = await fetch(url, {
-        method: "post",
-        mode: "cors",
+        method: "POST",
         headers: {
-          "Content-Type": "application/json",
-          Accept: "*/*"
+          "Content-Type": "application/json"
         },
         body: JSON.stringify(values)
       });
