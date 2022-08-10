@@ -22,4 +22,26 @@ declare interface IProject {
   technologies: TTechnology[];
 }
 
+declare type TFieldValidationsOption = {
+  condition: string | boolean | number | ((value1: any) => unknown);
+  message: string;
+};
+
+declare type TValidationOptions = {
+  minLength?: TFieldValidationsOption;
+  maxLength?: TFieldValidationsOption;
+  required?: TFieldValidationsOption;
+  validEmail?: TFieldValidationsOption;
+  validName?: TFieldValidationsOption;
+  ValidPassWord?: TFieldValidationsOption;
+  customValidation?: TFieldValidationsOption;
+  validTelephone?: TFieldValidationsOption;
+  equalTo?: TFieldValidationsOption;
+};
+
+declare type TFieldValidations = {
+  key: string;
+  validations?: TValidationOptions;
+};
+
 declare module "react-loadingg";
