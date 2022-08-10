@@ -26,6 +26,7 @@ const Form: React.FC = (): JSX.Element => {
       console.log("GREAT");
       const response = await fetch(url, {
         method: "POST",
+        mode: "no-cors",
         headers: {
           "Content-Type": "application/json"
         },
