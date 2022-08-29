@@ -1,7 +1,7 @@
 {
   "name": "whoisbeto",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "proxy": "http://localhost:3001/send",
   "scripts": {
     "dev": "vite",
