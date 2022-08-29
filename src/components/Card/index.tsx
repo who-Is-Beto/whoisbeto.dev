@@ -3,7 +3,6 @@ import { AiFillGithub } from "react-icons/ai";
 import { MdWebAsset } from "react-icons/md";
 import { getImageSrc } from "../../utils/getImageSrc";
 import Button from "../Button";
-import { IconContext } from "react-icons";
 import "./Card.css";
 
 const Card: React.FC<{

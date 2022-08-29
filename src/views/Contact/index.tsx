@@ -6,7 +6,6 @@ const Contact: React.FC = (): JSX.Element => {
   return (
     <div className="page">
       <h2 className="contact__title">Contact</h2>
-
       <Form />
     </div>
   );

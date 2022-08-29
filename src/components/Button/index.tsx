@@ -9,10 +9,15 @@ const Button: React.FC<{
   type?: TButtons;
   href?: string | null;
   blank?: boolean;
-}> = ({ children, type = "primary", href = null, blank = false }): JSX.Element => {
+  active?: boolean;
+}> = ({ children, type = "primary", href = null, blank = false, active = true }): JSX.Element => {
   return (
     <>
-      {!href && !blank && <button className={`button button--${type}`}>{children}</button>}
+      {!href && !blank && (
+        <button disabled={!active} className={`button button--${type}`}>
+          {children}
+        </button>
+      )}
 
       {href && !blank && (
         <Link className={`button button--${type}`} to={href}>
