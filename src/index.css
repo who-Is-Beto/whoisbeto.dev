@@ -39,7 +39,7 @@ br {
 }
 
 .page {
-  padding: 1rem;
+  padding: 1rem 1rem 0;
   overflow: auto;
   max-height: calc(100vh - 8rem);
 }

@@ -5,7 +5,12 @@ const Home: React.FC = (): JSX.Element => {
   return (
     <div className="home__container page">
       <a href="https://www.instagram.com/who.is.beto/" target="_blank">
-        <img className="home__image" src="https://i.imgur.com/sDFAEGc.jpg" alt="whoIsBeto photo" />
+        <img
+          loading={"lazy"}
+          className="home__image"
+          src="https://i.imgur.com/sDFAEGc.jpg"
+          alt="whoIsBeto photo"
+        />
       </a>
 
       <div className="greeting">

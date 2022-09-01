@@ -16,7 +16,12 @@ const Card: React.FC<{
   };
   return (
     <div className="card">
-      <img className="card__image" src={getImageSrc(project.image.asset._ref)} alt={project.name} />
+      <img
+        className="card__image"
+        src={getImageSrc(project.image.asset._ref)}
+        alt={project.name}
+        loading={"lazy"}
+      />
       <div className="card__info">
         <h3 className="card__info__title green-text ">{project.name}</h3>
         <p className="card__info__detail">{project.description}</p>
