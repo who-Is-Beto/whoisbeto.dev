@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "./From.css";
 
 const Form: React.FC = (): JSX.Element => {
-  const url = "http://localhost:3001/api/send";
+  const url = "https://mailer.fly.dev/api/send";
   const { values, handleChange, handleSubmit, formErrors, isSubmit } = useForm(
     {
       name: "",
