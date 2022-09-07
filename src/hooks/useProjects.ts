@@ -1,6 +1,6 @@
-import {} from "react";
 import sanityClient from "../sanity-react/src/client";
 import useSWR from "swr";
+import { IProject } from "../shimps";
 
 const projectsQuery = `
 *[_type == 'projects']{

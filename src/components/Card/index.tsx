@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { MdWebAsset } from "react-icons/md";
+import { IProject } from "../../shimps";
 import { getImageSrc } from "../../utils/getImageSrc";
 import Button from "../Button";
 import "./Card.css";
@@ -23,7 +24,7 @@ const Card: React.FC<{
         loading={"lazy"}
       />
       <div className="card__info">
-        <h3 className="card__info__title green-text ">{project.name}</h3>
+        <h3 className="card__info__title green-text">{project.name}</h3>
         <p className="card__info__detail">{project.description}</p>
         <div className="card__info__technologies green-text">
           {project.technologies.map(

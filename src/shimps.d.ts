@@ -1,3 +1,5 @@
+import { Url } from "url";
+
 type TProjectImage = {
   _type: string;
   asset: {
@@ -22,6 +24,15 @@ declare interface IProject {
   technologies: TTechnology[];
 }
 
+declare interface IWorks {
+  image: TProjectImage;
+  Company: string;
+  websiteLink: string;
+  position: string;
+  timeWorked: string;
+  description: string;
+}
+
 declare type TFieldValidationsOption = {
   condition: string | boolean | number | ((value1: any) => unknown);
   message: string;
@@ -43,5 +54,3 @@ declare type TFieldValidations = {
   key: string;
   validations?: TValidationOptions;
 };
-
-declare module "react-loadingg";

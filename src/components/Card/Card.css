@@ -5,7 +5,7 @@
   max-width: 100%;
   border-radius: 0.8rem;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   text-align: center;
   flex-direction: column;
   justify-content: center;
@@ -39,6 +39,10 @@
   width: 100%;
   gap: 0.5rem;
   flex-wrap: wrap;
+}
+
+.card__position {
+  margin: 0.5rem 0;
 }
 
 @media (min-width: 768px) {
