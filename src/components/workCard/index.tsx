@@ -1,7 +1,7 @@
 import React from "react";
 import { IWorks } from "../../shimps";
 import { getImageSrc } from "../../utils/getImageSrc";
-import "../Card/card.css";
+import "../Card/Card.css";
 
 const WorkCard: React.FC<{
   work: IWorks;
